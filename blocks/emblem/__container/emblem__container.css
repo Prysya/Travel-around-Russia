@@ -1,0 +1,5 @@
+.emblem__container {
+  display: grid;
+  gap: 36px;
+  grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
+}

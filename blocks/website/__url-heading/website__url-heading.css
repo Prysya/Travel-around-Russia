@@ -1,0 +1,9 @@
+.website__url-heading {
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0 0 9px;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #aaaaaa;
+}

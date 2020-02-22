@@ -1,0 +1,9 @@
+.additional__text {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  margin: 0;
+  z-index: 1;
+}

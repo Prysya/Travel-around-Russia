@@ -1,0 +1,9 @@
+.additional__heading {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 27px;
+  line-height: 29px;
+  color: #ffffff;
+  margin: 0;
+  z-index: 1;
+}

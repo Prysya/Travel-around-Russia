@@ -1,0 +1,10 @@
+@import url(./_weight/_strong/ntro__author_weight_strong.css);
+@import url(./_weight/_normal/intro__author_weight_normal.css);
+
+.intro__author {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+  color: #ffffff;
+  margin: 0;
+}

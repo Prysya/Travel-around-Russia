@@ -1,0 +1,6 @@
+@import url(./_large/wrapper_large.css);
+@import url(./_medium/wrapper_medium.css);
+
+.wrapper {
+  margin: 0 auto;
+}

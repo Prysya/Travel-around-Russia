@@ -1,0 +1,9 @@
+@import url(./_font-size/_medium/content-subtitle_font-size_medium.css);
+@import url(./_font-size/_large/content-subtitle_font-size_large.css);
+@import url(./_text-align/_center/content-subtitle_text-align_center.css);
+
+.content-subtitle {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+}

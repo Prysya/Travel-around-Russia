@@ -1,0 +1,5 @@
+.intro__content-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}

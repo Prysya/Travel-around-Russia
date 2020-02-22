@@ -1,0 +1,16 @@
+@import url(./_active/header__lang_active.css);
+
+.header__lang {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: capitalize;
+  transition: opacity 0.2s linear;
+  display: block;
+  text-decoration: none;
+}
+
+.header__lang:hover {
+  opacity: .7;
+}

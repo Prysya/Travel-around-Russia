@@ -1,0 +1,10 @@
+.intro__quote {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+  max-width: 683px;
+  line-height: 23px;
+  margin: 0;
+  margin-right: 18px;
+}
