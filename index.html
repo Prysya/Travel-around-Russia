@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Путешествие по России</title>
-    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/style.css" />
   </head>
   <body class="page">
     <header class="header">
-      <div class="wrapper wrapper_large header__container">
+      <div class="wrapper header__container">
         <img
           class="header__logo"
           src="./images/header__logo.svg"
@@ -16,38 +17,38 @@
         />
         <ul class="header__list">
           <li class="header__item">
-            <a href="#" class="header__lang header__lang_active">ru</a>
+            <a href="#" class="link header__lang header__lang_active">ru</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__lang header__lang_disabled">en</a>
+            <a href="#" class="link header__lang">en</a>
           </li>
         </ul>
       </div>
     </header>
     <main class="main">
       <section class="lead">
-        <div class="wrapper wrapper_medium lead__wrapper">
-          <h1
-            class="content-title content__title_font-size_large content-title_text-align_center lead__title"
-          >
+        <div class="wrapper lead__wrapper">
+          <h1 class="content-title content__title_font-size_large lead__title">
             Путешествия по России
           </h1>
           <p
-            class="content-subtitle content-subtitle_font-size_large content-subtitle_text-align_center lead__subtitle"
+            class="content-subtitle content-subtitle_font-size_large lead__subtitle"
           >
             Настоящая страна не в выпусках новостей, а здесь.
           </p>
-          <img
-            src="./images/lead__image.png"
-            alt="Маршрут со всеми остановками от Пскова до Улан-Удэ."
-            class="lead__image"
-          />
-          <p class="lead__caption">ваша полка — верхняя</p>
+          <figure class="lead__figure">
+            <img
+              src="./images/lead__image.png"
+              alt="Маршрут со всеми остановками от Пскова до Улан-Удэ."
+              class="lead__image"
+            />
+            <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="intro">
-        <div class="wrapper wrapper_medium intro__wrapper">
+        <div class="wrapper intro__wrapper">
           <h2 class="content-title content__title_font-size_small intro__title">
             Чего мы там не видели?
           </h2>
@@ -70,48 +71,47 @@
               достойные вашего отпуска.
             </p>
             <div class="intro__author-container">
-              <p class="intro__author intro__author_weight_strong">
-                Автор текста:&nbsp;<span
-                  class="intro__author intro__author_weight_normal"
-                  >Джейсон Стейтем</span
-                >
+              <p class="intro__author">
+                <span class="intro__author-bold">Автор текста:</span
+                >&nbsp;Джейсон Стейтем
               </p>
-              <p class="intro__author intro__author_weight_strong">
-                Дата:&nbsp;<time
-                  class="intro__text intro__author_weight_normal"
-                  datetime="2019-06-12"
-                  >12.06.2019 г.</time
-                >
+              <p class="intro__author">
+                <span class="intro__author-bold">Дата:&nbsp;</span
+                ><time datetime="2019-06-12">12.06.2019 г.</time>
               </p>
             </div>
           </div>
           <div class="intro__info-container">
-            <p class="intro__info intro__info_weight_strong">
-              Часовых поясов
-              <span class="intro__info intro__info_weight_normal">11</span>
+            <p class="intro__info">
+              <span class="intro__info-bold">Часовых поясов</span>
+              11
             </p>
-            <p class="intro__info intro__info_weight_strong">
-              Объектов природного наследия ЮНЕСКО
-              <span class="intro__info intro__info_weight_normal">12</span>
+            <p class="intro__info">
+              <span class="intro__info-bold"
+                >Объектов природного наследия ЮНЕСКО</span
+              >
+              12
             </p>
-            <p class="intro__info intro__info_weight_strong">
-              Объектов культурного наследия ЮНЕСКО
-              <span class="intro__info intro__info_weight_normal">16</span>
+            <p class="intro__info">
+              <span class="intro__info-bold"
+                >Объектов культурного наследия ЮНЕСКО</span
+              >
+              16
             </p>
-            <p class="intro__info intro__info_weight_strong">
-              Природных заповедников
-              <span class="intro__info intro__info_weight_normal">105</span>
+            <p class="intro__info">
+              <span class="intro__info-bold">Природных заповедников</span>
+              105
             </p>
-            <p class="intro__info intro__info_weight_strong">
-              Аэропортов
-              <span class="intro__info intro__info_weight_normal">241</span>
+            <p class="intro__info">
+              <span class="intro__info-bold">Аэропортов</span>
+              241
             </p>
           </div>
         </div>
       </section>
 
       <section class="photo-grid">
-        <div class="wrapper wrapper_large photo-grid__grid">
+        <div class="wrapper photo-grid__grid">
           <img
             src="./images/photo-grid__item-1.png"
             alt="Вид из окна поезда на березки."
@@ -176,7 +176,7 @@
       </section>
 
       <section class="places">
-        <div class="wrapper wrapper_medium places__wrapper">
+        <div class="wrapper places__wrapper">
           <div class="place">
             <h2
               class="content-title content__title_font-size_medium place__title"
@@ -184,8 +184,11 @@
               Куршская коса
             </h2>
             <div class="website place__website">
-              <h3 class="website__url-heading" lang="en">url</h3>
-              <a href="http://park-kosa.ru" class="website__url" target="_blank"
+              <p class="website__url-heading" lang="en">url</p>
+              <a
+                href="http://park-kosa.ru"
+                class="link website__url"
+                target="_blank"
                 >park-kosa.ru</a
               >
             </div>
@@ -219,10 +222,10 @@
               Кольский
             </h2>
             <div class="website place__website">
-              <h3 class="website__url-heading" lang="en">url</h3>
+              <p class="website__url-heading" lang="en">url</p>
               <a
                 href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
-                class="website__url"
+                class="link website__url"
                 target="_blank"
                 >National Geographic</a
               >
@@ -256,10 +259,10 @@
               Алтай
             </h2>
             <div class="website place__website">
-              <h3 class="website__url-heading" lang="en">url</h3>
+              <p class="website__url-heading" lang="en">url</p>
               <a
                 href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
-                class="website__url"
+                class="link website__url"
                 target="_blank"
                 >Facebook</a
               >
@@ -293,10 +296,10 @@
               Зимний Байкал
             </h2>
             <div class="website place__website">
-              <h3 class="website__url-heading" lang="en">url</h3>
+              <p class="website__url-heading" lang="en">url</p>
               <a
                 href="https://vk.com/baikalmile"
-                class="website__url"
+                class="link website__url"
                 target="_blank"
                 >https://vk.com/baikalmile</a
               >
@@ -329,10 +332,10 @@
               Карелия
             </h2>
             <div class="website place__website">
-              <h3 class="website__url-heading" lang="en">url</h3>
+              <p class="website__url-heading" lang="en">url</p>
               <a
                 href="http://vodlozero.ru/"
-                class="website__url"
+                class="link website__url"
                 target="_blank"
                 >http://vodlozero.ru/</a
               >
@@ -358,50 +361,51 @@
       </section>
 
       <section class="video">
-        <div class="wrapper wrapper_large video__wrapper">
+        <div class="wrapper video__wrapper">
           <h2
-            class="content-title content__title_font-size_medium content-title_text-align_center video__title"
+            class="content-title content__title_font-size_medium video__title"
           >
             В глубины Земли и в дальний космос
           </h2>
           <p
-            class="content-subtitle content-subtitle_font-size_medium content-subtitle_text-align_center  video__subtitle"
+            class="content-subtitle content-subtitle_font-size_medium  video__subtitle"
           >
             Видео от студии Stereotactic о местах в России, где ведутся
             фундаментальные исследования
           </p>
           <div class="video__container">
             <a
-              class="video__item video__item_kamchatka"
+              class="link video-content video-content_kamchatka"
               href="https://vimeo.com/81106671"
               target="_blank"
               ><img
-                class="video__icon"
-                src="./blocks/video/__icon/video__icon_play.png"
+                class="video-content__icon"
+                src="./images/video-content_play.png"
                 alt="Запустить видео."
               />
-              <div class="video__text-container">
-                <p class="video__duration">6:30</p>
-                <h3 class="video__item-title" lang="en">Colors of Kamchatka</h3>
-                <p class="video__item-subtitle" lang="en">
+              <div class="video-content__text-container">
+                <p class="video-content__duration">6:30</p>
+                <h2 class="video-content__title" lang="en">
+                  Colors of Kamchatka
+                </h2>
+                <p class="video-content__subtitle" lang="en">
                   Director: Pavel Karykhalin
                 </p>
               </div>
             </a>
-
             <a
-              class="video__item video__item_observatory"
-              href=""
+              class="link video-content video-content_observatory"
+              href="https://vimeo.com/290675450"
               target="_blank"
               ><img
-                class="video__icon"
-                src="./blocks/video/__icon/video__icon_play.png"
+                class="video-content__icon"
+                src="./images/video-content_play.png"
                 alt="Запустить видео."
               />
-              <div class="video__text-container">
-                <p class="video__duration">24:45</p>
-                <h3 class="video__item-title">Обсерватория | Observatory</h3>
-                <p class="video__item-subtitle" lang="en">
+              <div class="video-content__text-container">
+                <p class="video-content__duration">24:45</p>
+                <h2 class="video-content__title">Обсерватория | Observatory</h2>
+                <p class="video-content__subtitle" lang="en">
                   Director: Alexander Khudokon
                 </p>
               </div>
@@ -411,58 +415,58 @@
       </section>
 
       <section class="additional">
-        <div class="wrapper wrapper_large additional__wrapper">
+        <div class="wrapper additional__wrapper">
           <h2
-            class="content-title content__title_font-size_medium content-title_text-align_center additional__title"
+            class="content-title content__title_font-size_medium additional__title"
           >
             А также
           </h2>
           <p
-            class="content-subtitle content-subtitle_font-size_medium content-subtitle_text-align_center  additional__subtitle"
+            class="content-subtitle content-subtitle_font-size_medium  additional__subtitle"
           >
             места, рекомендованные нашими фотографами
           </p>
           <div class="additional__container">
             <a
-              class="additional__item additional__item_novoros"
+              class="link additional-content additional-content_novoros"
               href="#"
               target="_blank"
             >
-              <h3 class="additional__heading">Новороссийская бухта</h3>
-              <p class="additional__text">
+              <h2 class="additional-content__heading">Новороссийская бухта</h2>
+              <p class="additional-content__text">
                 Главный торговый порт не курорт, но море здесь лазурное, и толпы
                 кораблей на рейде. Залюбуешься.
               </p>
             </a>
             <a
-              class="additional__item additional__item_arakul"
+              class="link additional-content additional-content_arakul"
               href="#"
               target="_blank"
             >
-              <h3 class="additional__heading">Аракульский шихан</h3>
-              <p class="additional__text">
+              <h2 class="additional-content__heading">Аракульский шихан</h2>
+              <p class="additional-content__text">
                 Даже для Южного Урала, где красиво везде, это пейзаж выдающийся.
                 И там отсутствует несносная мошкá.
               </p>
             </a>
             <a
-              class="additional__item additional__item_cherep"
+              class="link additional-content additional-content_cherep"
               href="#"
               target="_blank"
             >
-              <h3 class="additional__heading">Череповец</h3>
-              <p class="additional__text">
+              <h2 class="additional-content__heading">Череповец</h2>
+              <p class="additional-content__text">
                 Громадный металлургический комбинат на водном пути с Волги в
                 Балтийское море. В нём есть своя красота.
               </p>
             </a>
             <a
-              class="additional__item additional__item_nikola"
+              class="link additional-content additional-content_nikola"
               href="#"
               target="_blank"
             >
-              <h3 class="additional__heading">Никола-Ленивец</h3>
-              <p class="additional__text">
+              <h2 class="additional-content__heading">Никола-Ленивец</h2>
+              <p class="additional-content__text">
                 Оцените ответ современных художников идолам капища, которое было
                 тут при древнем поселении на реке Угра.
               </p>
@@ -472,61 +476,61 @@
       </section>
 
       <section class="comments">
-        <div class="wrapper wrapper_large comments__wrapper">
+        <div class="wrapper comments__wrapper">
           <h2
-            class="content-title content__title_font-size_medium content-title_text-align_center comments__title"
+            class="content-title content__title_font-size_medium comments__title"
           >
             Фотографы, снимающие Россию
           </h2>
           <p
-            class="content-subtitle content-subtitle_font-size_medium content-subtitle_text-align_center  comments__subtitle"
+            class="content-subtitle content-subtitle_font-size_medium  comments__subtitle"
           >
             Природа и люди вдохновили их работы, удостоенные наград на
             международных конкурсах
           </p>
           <div class="comments__container">
-            <div class="comments__comment">
+            <div class="comment-block">
               <img
                 src="./images/comments__image_lyagush.png"
                 alt="Фотограф Виктор Лягушкин."
-                class="comments__image"
+                class="comment-block__image"
               />
-              <blockquote class="comments__quote-block">
-                <p class="comments__quote">
+              <blockquote class="comment-block__quote-block">
+                <p class="comment-block__quote">
                   «Если вам кажется, что в России ничего не происходит, то
                   просто выгляньте “наружу”…»
                 </p>
-                <footer class="comments__author">Виктор Лягушкин</footer>
+                <footer class="comment-block__author">Виктор Лягушкин</footer>
               </blockquote>
             </div>
-            <div class="comments__comment">
+            <div class="comment-block">
               <img
                 src="./images/comments__image_ivan.png"
                 alt="Фотограф Иван Хафизов."
-                class="comments__image"
+                class="comment-block__image"
               />
-              <blockquote class="comments__quote-block">
-                <p class="comments__quote">
+              <blockquote class="comment-block__quote-block">
+                <p class="comment-block__quote">
                   «Если в город едут туристы — неважно за чем они туда едут: за
                   шамбалой или фрески Рублева искать, или на родину Тарковского
                   — туристы обеспечивают любой город молодёжью, рабочими местами
                   и в конечном счёте наполняют его жизнью.»
                 </p>
-                <footer class="comments__author">Иван Хафизов</footer>
+                <footer class="comment-block__author">Иван Хафизов</footer>
               </blockquote>
             </div>
-            <div class="comments__comment">
+            <div class="comment-block">
               <img
                 src="./images/comments__image_sergey.png"
                 alt="Фотограф Сергей Максимишин."
-                class="comments__image"
+                class="comment-block__image"
               />
-              <blockquote class="comments__quote-block">
-                <p class="comments__quote">
+              <blockquote class="comment-block__quote-block">
+                <p class="comment-block__quote">
                   «Ты приезжаешь, и люди рассказывают тебе, как им плохо. А
                   когда ты покажешь, как им плохо, то ты сволочь и всё очернил.»
                 </p>
-                <footer class="comments__author">Сергей Максимишин</footer>
+                <footer class="comment-block__author">Сергей Максимишин</footer>
               </blockquote>
             </div>
           </div>
@@ -534,14 +538,14 @@
       </section>
 
       <section class="cover">
-        <div class="wrapper wrapper_large cover__wrapper">
+        <div class="wrapper cover__wrapper">
           <a
-            class="cover__item"
+            class="link cover__item"
             href="https://stampsy.com/na-elektrichkakh-do-baikala"
             target="_blank"
           >
             <h2
-              class="content-title content__title_font-size_medium content-title_text-align_center cover__title"
+              class="content-title content__title_font-size_medium cover__title"
             >
               До Байкала «на собаках»
             </h2>
@@ -554,61 +558,65 @@
       </section>
 
       <section class="emblem">
-        <div class="wrapper wrapper_large emblem__wrapper">
+        <div class="wrapper emblem__wrapper">
           <h2 class="content-title content__title_extra-small emblem__title">
             Природа на гербах российских городов
           </h2>
           <div class="emblem__container">
-            <div class="emblem__item">
+            <div class="emblem-block">
               <img
                 src="./images/content__image_Velikiy-Novg.png"
                 alt="Герб города Великий Новгород."
-                class="emblem__image"
+                class="emblem-block__image"
               />
-              <p class="emblem__city">Великий Новгород</p>
+              <p class="emblem-block__city">Великий Новгород</p>
             </div>
-            <div class="emblem__item">
+            <div class="emblem-block">
               <img
                 src="./images/content__image_Rostov-velikiy.png"
                 alt="Герб города Ростов Великий."
-                class="emblem__image"
+                class="emblem-block__image"
               />
-              <p class="emblem__city">Ростов Великий</p>
+              <p class="emblem-block__city">Ростов Великий</p>
             </div>
-            <div class="emblem__item">
+            <div class="emblem-block">
               <img
                 src="./images/content__image_Tambov.png"
                 alt="Герб города Тамбов."
-                class="emblem__image"
+                class="emblem-block__image"
               />
-              <p class="emblem__city">Тамбов</p>
+              <p class="emblem-block__city">Тамбов</p>
             </div>
-            <div class="emblem__item">
+            <div class="emblem-block">
               <img
                 src="./images/content__image_Elabuga.png"
                 alt="Герб города Елабуга."
-                class="emblem__image"
+                class="emblem-block__image"
               />
-              <p class="emblem__city">Елабуга</p>
+              <p class="emblem-block__city">Елабуга</p>
             </div>
-            <div class="emblem__item">
+            <div class="emblem-block">
               <img
                 src="./images/content__image_Perm.png"
                 alt="Герб города Пермь."
-                class="emblem__image"
+                class="emblem-block__image"
               />
-              <p class="emblem__city">Пермь</p>
+              <p class="emblem-block__city">Пермь</p>
             </div>
           </div>
         </div>
       </section>
 
       <section class="barentsburg">
-        <div class="wrapper wrapper_large barentsburg__wrapper">
-          <h2 class="content-title content__title_extra-small barentsburg__title">
+        <div class="wrapper barentsburg__wrapper">
+          <h2
+            class="content-title content__title_extra-small barentsburg__title"
+          >
             Баренцбург
           </h2>
-          <p class="barentsburg__coord">78.0648&deg;&nbsp;с.ш. 14.2335&deg;&nbsp;в.д.</p>
+          <p class="barentsburg__coord">
+            78.0648&deg;&nbsp;с.ш. 14.2335&deg;&nbsp;в.д.
+          </p>
           <img
             src="./images/barentsburg__map.png"
             alt="Баренцбург на карте."
@@ -624,7 +632,7 @@
               <p class="website__url-heading">url</p>
               <a
                 href="https://meduza.io/feature/2016/03/02/umeret-ili-roditsya-zdes-prakticheski-nevozmozhno"
-                class="website__url"
+                class="link website__url"
                 target="_blank"
                 >Умереть или родиться здесь практически невозможно</a
               >
@@ -634,20 +642,77 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="wrapper wrapper_large footer__wrapper">
-        <ul class="footer__list">
-          <li class="footer__item"><a href="https://yandex.ru/maps/" class="footer__link" targer="_blank">Карты</a></li>
-          <li class="footer__item"><a href="https://yandex.ru/weather/" class="footer__link" targer="_blank">Погода</a></li>
-          <li class="footer__item"><a href="https://rasp.yandex.ru/" class="footer__link" targer="_blank">Расписание</a></li>
-          <li class="footer__item"><a href="https://calendar.yandex.ru/" class="footer__link" targer="_blank">Календарь</a></li>
-          <li class="footer__item"><a href="https://travel.yandex.ru" class="footer__link" targer="_blank">Путешествия</a></li>
-        </ul>
-        <p class="footer__copyright">&copy;&nbsp;2020. Стас Стаховский</p>
+      <div class="wrapper footer__wrapper">
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a
+                href="https://yandex.ru/maps/"
+                class="link footer__link"
+                target="_blank"
+                >Карты</a
+              >
+            </li>
+            <li class="footer__item">
+              <a
+                href="https://yandex.ru/weather/"
+                class="link footer__link"
+                target="_blank"
+                >Погода</a
+              >
+            </li>
+            <li class="footer__item">
+              <a
+                href="https://rasp.yandex.ru/"
+                class="link footer__link"
+                target="_blank"
+                >Расписание</a
+              >
+            </li>
+            <li class="footer__item">
+              <a
+                href="https://calendar.yandex.ru/"
+                class="link footer__link"
+                target="_blank"
+                >Календарь</a
+              >
+            </li>
+            <li class="footer__item">
+              <a
+                href="https://travel.yandex.ru"
+                class="link footer__link"
+                target="_blank"
+                >Путешествия</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="footer__copyright">
+          &copy;&nbsp;<time datetime="2020">2020</time>. Стас Стаховский
+        </p>
       </div>
     </footer>
   </body>
 </html>
 
-<!-- подключить нормалайз -->
-<!-- посмотреть ссылки в 'а так же' -->
-<!-- разные лайн хейт в контент тайтл -->
+<!--
+
+  Работа принята, вы отлично справились! 
+  
+  Что понравилось:
+
+   - Грамотное использование БЭМ 
+   - Подбор семантичных тегов 
+   - Использование файловой структуры по БЭМ
+   - Использование гридов
+   - Вы не включаете текстовый контент в div
+   - Вы используете правильные относительные пути к изображениям
+   - Файловая структура по БЭМ
+   - Попадание в макет
+
+ Комментарии "можно лучше" носят рекомендательный характер, их выполнение остается на Ваше усмотрение.
+ Комментарии "надо исправить" являются обязательными, только при выполнении всех "надо исправить" работа будет зачтена.
+ Пожалуйста, не удаляйте комментарии до следующей итерации.
+ Для вашего удобства, рекомендую помечать каким-нибудь символом комментарии, которые вы выполнили.
+
+-->

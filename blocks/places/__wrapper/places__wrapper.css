@@ -2,4 +2,5 @@
     margin-top: 100px;
     display: grid;
     row-gap: 82px;
+    max-width: 985px;
 }

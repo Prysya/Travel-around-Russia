@@ -1,0 +1,40 @@
+@import url(./_arakul/additional-content_arakul.css);
+@import url(./_cherep/additional-content_cherep.css);
+@import url(./_nikola/additional-content_nikola.css);
+@import url(./_novoros/additional-content_novoros.css);
+@import url(./__heading/additional-content__heading.css);
+@import url(./__text/additional-content__text.css);
+
+.additional-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 330px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 30px 18px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.additional-content::before {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 0;
+  transition: opacity 0.4s linear;
+}
+
+.additional-content:hover::before {
+  opacity: 0.8;
+}

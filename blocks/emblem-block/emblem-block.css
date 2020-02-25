@@ -1,0 +1,7 @@
+@import url(./__image/emblem-block__image.css);
+@import url(./__city/emblem-block__city.css);
+
+.emblem-block {
+    text-align: center;
+  }
+  

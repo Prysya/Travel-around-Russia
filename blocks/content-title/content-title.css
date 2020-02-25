@@ -2,10 +2,8 @@
 @import url(./_font-size/_small/content__title_font-size_small.css);
 @import url(./_font-size/_medium/content__title_font-size_medium.css);
 @import url(./_font-size/_large/content__title_font-size_large.css);
-@import url(./_text-align/_center/content-title_text-align_center.css);
 
 .content-title {
-  font-family: "Inter", Arial, sans-serif;
   font-weight: 900;
-  color: #ffffff;
+  text-align: center;
 }

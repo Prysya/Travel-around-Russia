@@ -1,9 +1,6 @@
 .website__url {
-  font-family: "Inter", Arial, sans-serif;
-  font-weight: normal;
   font-size: 18px;
   text-decoration-line: underline;
-  color: #ffffff;
   transition: opacity 0.2s linear;
   line-height: 1.7;
 }
