@@ -13,12 +13,12 @@
 @import url(../blocks/place/place.css);
 @import url(../blocks/video/video.css);
 @import url(../blocks/video-content/video-content.css);
-@import url(../blocks/additional/additional.css);
-@import url(../blocks/additional-content/additional-content.css);
+/*@import url(../blocks/additional/additional.css);*/
+/*@import url(../blocks/additional-content/additional-content.css);*/
 @import url(../blocks/comments/comments.css);
 @import url(../blocks/comment-block/comment-block.css);
 @import url(../blocks/cover/cover.css);
-@import url(../blocks/emblem/emblem.css);
-@import url(../blocks/emblem-block/emblem-block.css);
-@import url(../blocks/barentsburg/barentsburg.css);
+/*@import url(../blocks/emblem/emblem.css);*/
+/*@import url(../blocks/emblem-block/emblem-block.css);*/
+/*@import url(../blocks/barentsburg/barentsburg.css);*/
 @import url(../blocks/footer/footer.css);

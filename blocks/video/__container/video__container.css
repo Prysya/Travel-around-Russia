@@ -1,5 +1,12 @@
 .video__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(583px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 18px;
+}
+
+@media screen and (max-width: 680px) {
+    .video__container {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
 }

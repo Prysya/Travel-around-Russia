@@ -1,7 +1,27 @@
 .intro__quote {
-  font-size: 14px;
+  font-size: 0.875rem;
   max-width: 683px;
-  line-height: 23px;
+  line-height: 1.4375rem;
   margin: 0;
-  margin-right: 18px;
+  /*margin-right: 18px;*/
+}
+
+@media screen and (max-width: 1080px) {
+  .intro__quote {
+    max-width: 691px;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .intro__quote {
+    max-width: 710px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .intro__quote {
+    font-size: 1rem;
+    line-height: 1.6875rem;
+  }
 }

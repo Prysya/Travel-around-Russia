@@ -3,6 +3,17 @@
   gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   justify-content: center;
-  margin-top: 87px;
-  
+  margin-top: 97px;
+}
+
+@media screen and (max-width: 680px) {
+  .photo-grid__grid {
+    margin-top: 64px;
+    gap: 21px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .photo-grid__grid {
+    gap: 9px;
+  }
 }

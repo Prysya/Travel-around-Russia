@@ -2,3 +2,9 @@
   border-radius: 100px;
   margin-bottom: 33px;
 }
+
+@media screen and (max-width: 956px) {
+  .comment-block__image {
+    margin-bottom: 1em;
+  }
+}

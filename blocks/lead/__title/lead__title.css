@@ -1,5 +1,18 @@
 .lead__title {
   margin: 0 auto 35px;
   max-width: 782px;
-  line-height: 93px;
+  line-height: 5.8125rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .content__title_font-size_large {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .content__title_font-size_large {
+    line-height: 2.75rem;
+    max-width: 343px;
+    margin-bottom: 12px;
+  }
 }

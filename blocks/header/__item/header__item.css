@@ -5,3 +5,9 @@
 .header__item:last-of-type {
   margin: 0;
 }
+
+@media screen and (max-width: 680px){
+  .header__item {
+    margin-right: 24px;
+  }
+}

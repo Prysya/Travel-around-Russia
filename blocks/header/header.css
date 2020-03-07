@@ -5,6 +5,12 @@
 @import url(./__lang/header__lang.css);
 
 .header {
-    padding: 30px 0;
-    box-sizing: border-box;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 680px) {
+  .header {
+    padding: 17px 0;
+  }
 }

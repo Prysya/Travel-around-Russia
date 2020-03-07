@@ -1,0 +1,6 @@
+@media screen and (max-width: 680px) {
+  .place__paragraph-cell {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+}

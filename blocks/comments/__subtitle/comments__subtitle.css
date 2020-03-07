@@ -1,5 +1,22 @@
 .comments__subtitle {
   margin: 0 auto 64px;
   max-width: 640px;
-  line-height: 35px;
+  line-height: 2.1875rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .comments__subtitle {
+    margin-bottom: 61px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .comments__subtitle {
+    line-height: 1.5;
+    margin-bottom: 41px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .comments__subtitle {
+    margin-bottom: 33px;
+  }
 }

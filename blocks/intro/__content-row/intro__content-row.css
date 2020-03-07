@@ -1,5 +1,21 @@
 .intro__content-row {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 28px;
+  margin-bottom: 19px;
+}
+
+@media screen and (max-width: 820px) {
+  .intro__content-row {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .intro__content-row {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .intro__content-row {
+    margin-bottom: 35px;
+  }
 }

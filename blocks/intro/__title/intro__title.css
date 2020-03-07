@@ -2,3 +2,14 @@
   margin: 0 0 32px;
   text-align: left;
 }
+
+@media screen and (max-width: 680px) {
+  .intro__title {
+    max-width: 343px;
+    line-height: 2.1875rem;
+  }
+}@media screen and (max-width: 320px) {
+  .intro__title {
+    margin-bottom: 38px;
+  }
+}

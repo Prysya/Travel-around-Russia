@@ -1,3 +1,14 @@
 .content__title_font-size_medium {
-  font-size: 72px;
+  font-size: 4.5rem;
+}
+
+@media screen and (max-width: 956px) {
+  .content__title_font-size_medium {
+    font-size: 2.625rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  .content__title_font-size_medium {
+    font-size: 2rem;
+  }
 }

@@ -1,10 +1,22 @@
 .footer__link {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5rem;
   transition: opacity 0.2s linear;
   display: block;
 }
 
 .footer__link:hover {
   opacity: 0.7;
+}
+
+@media screen and (max-width: 940px) {
+  .footer__link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer__link {
+    font-size: 1.5rem;
+  }
 }
