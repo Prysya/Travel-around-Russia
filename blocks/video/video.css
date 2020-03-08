@@ -1,4 +1,28 @@
-@import url(./__wrapper/video__wrapper.css);
 @import url(./__title/video__title.css);
 @import url(./__subtitle/video__subtitle.css);
 @import url(./__container/video__container.css);
+
+.video {
+  margin-top: 105px;
+}
+
+@media screen and (max-width: 1080px) {
+  .video {
+    margin-top: 113px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .video {
+    margin-top: 108px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .video {
+    margin-top: 74px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .video {
+    margin-top: 70px;
+  }
+}

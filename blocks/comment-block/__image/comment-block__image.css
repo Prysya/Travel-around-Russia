@@ -1,6 +1,7 @@
 .comment-block__image {
   border-radius: 100px;
   margin-bottom: 33px;
+  max-width: 97px;
 }
 
 @media screen and (max-width: 956px) {

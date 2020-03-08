@@ -1,1 +1,28 @@
-@import url(./__wrapper/places__wrapper.css);
+.places {
+  margin-top: 100px;
+  display: grid;
+  row-gap: 82px;
+  max-width: 985px;
+}
+
+@media screen and (max-width: 1080px) {
+  .places {
+    margin-top: 111px;
+    row-gap: 86px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .places {
+    margin-top: 106px;
+    row-gap: 84px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .places {
+    row-gap: 58px;
+    width: 100%;
+    margin-top: 72px;
+  }
+}
